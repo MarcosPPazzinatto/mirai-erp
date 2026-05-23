@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: mirai-postgres
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_USER: mirai
+      POSTGRES_PASSWORD: XYZ
+      POSTGRES_DB: mirai_erp
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
