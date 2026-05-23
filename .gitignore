@@ -1,0 +1,27 @@
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+
+# Go
+bin/
+coverage.out
+
+# Node
+node_modules/
+dist/
+
+# Env
+.env
+.env.*
+
+# Terraform
+.terraform/
+
+# Misc
+tmp/
